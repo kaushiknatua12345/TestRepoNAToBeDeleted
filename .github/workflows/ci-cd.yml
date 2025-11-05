@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dist
-        path: dist/
+        path: dist/componenttesting_ex/
 
   deploy:
     needs: build-and-test
@@ -44,9 +44,11 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: dist
+        path: dist/componenttesting_ex
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
+        folder: dist/componenttesting_ex
         folder: dist/componenttesting_ex
         branch: gh-pages
