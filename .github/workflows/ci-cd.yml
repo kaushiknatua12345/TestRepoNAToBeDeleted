@@ -50,9 +50,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist/componenttesting_ex
-<<<<<<< HEAD
-        folder: dist/componenttesting_ex
         branch: gh-pages
-=======
-        branch: gh-pages
->>>>>>> 70dd7b2599045250dd9b7c03b07bc8680117cab4
